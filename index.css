@@ -1,0 +1,218 @@
+/* Front page styling */
+#frontPage {
+    background-image: url('bg\ image2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#frontPage h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(0, 255, 170);
+}
+
+#typingMessage {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.9rem;
+    max-width: 600px;
+    color: azure;
+    margin-bottom: 30px;
+}
+
+#typedText {
+    border-right: 2px solid #F7F6F2;
+    animation: blink 0.7s step-end infinite;
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+#startButton {
+    background-color: #9D5C63;
+    color: #F7F6F2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#startButton:hover {
+    background-color: #6B705C;
+}
+/* Main container styling */
+.container {
+    background-color: #A3B18A; /* Muted Olive Green */
+    padding-bottom: 20px;
+    width: 100% !important;
+    min-height: 100vh;
+}
+
+/* Header styling */
+.headName {
+    color: #6B705C; /* Deep Olive */
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Error message styling */
+#msg {
+    text-align: center;
+    color: red;
+    display: none;
+    margin-bottom: 20px;
+}
+
+/* Items container styling */
+#items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Single item (recipe card) styling */
+.singleItem {
+    cursor: pointer;
+}
+
+/* Yellow background container */
+.yellow-background {
+    width: 100% !important;
+    max-width: 1400px !important; /* Increased max width for wider screens */
+    padding: 40px; /* Add padding */
+    background-color: #F2E8C9; /* Warm Sand Beige */
+    display: flex;
+    justify-content: center; /* Center the card */
+    align-items: center; /* Vertically center */
+    margin: 0 auto;
+}
+
+/* Card (off-white box) styling */
+.card {
+    background-color: #F7F6F2; /* Creamy Off-White */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+    width: 100% !important; /* Full width inside container */
+    max-width: 1200px !important; /* Increased max width */
+    margin: 0 auto;
+}
+
+/* Details container styling */
+#details {
+    width: 100% !important; /* Full width inside container */
+    max-width: 1200px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    padding: 20px;
+}
+
+/* Image container */
+.image-container {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Increase the size of the image */
+.card-img-top {
+    display: block; /* Center the image with margin auto */
+    width: 90%;
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Increase the size of list items (Ingredients) */
+#details ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Increase the size of instruction text */
+#details p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Increase heading sizes (e.g., "Ingredients", "Instructions") */
+#details h6 {
+    font-size: 22px;
+}
+
+/* Apply Montserrat to all headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* Apply Roboto to the body text */
+body, p, ul, li, .card-text, input, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Header font customization */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem; /* Adjusted size for clarity */
+    color: #6B705C; /* Deep Olive */
+    text-align: center; /* Center alignment for header */
+}
+
+/* Adjust heading font sizes */
+h2 {
+    font-size: 2rem; /* Adjusted size */
+    color: #9D5C63; /* Muted Maroon */
+    text-align: center; /* Center alignment for sub-headers */
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #B7B7A4; /* Soft Sage Green */
+    text-align: center; /* Center alignment for dish names */
+}
+
+/* Adjust body text size */
+body, p, li {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Button styling */
+button {
+    background-color: #9D5C63; /* Muted Maroon */
+    color: #F7F6F2; /* Creamy Off-White */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6B705C; /* Deep Olive */
+}
+
+/* Additional styles for hover effects */
+.singleItem:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
